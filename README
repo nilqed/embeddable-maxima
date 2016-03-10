@@ -649,3 +649,83 @@ change information is available in the ChangeLog.
 
 For more information on Maxima, see the Maxima web site,
 <http://maxima.sourceforge.net>.
+
+----------
+Second run
+----------
+
+kfp@helix:~$ fricas -nosman
+Checking for foreign routines
+AXIOM="/usr/local/lib/fricas/target/x86_64-unknown-linux"
+spad-lib="/usr/local/lib/fricas/target/x86_64-unknown-linux/lib/libspad.so"
+foreign routines found
+openServer result -2
+                       FriCAS Computer Algebra System
+                         Version: FriCAS 2016-01-24
+                   Timestamp: Sam Feb 20 18:53:34 CET 2016
+-----------------------------------------------------------------------------
+   Issue )copyright to view copyright notices.
+   Issue )summary for a summary of useful system commands.
+   Issue )quit to leave FriCAS and return to shell.
+-----------------------------------------------------------------------------
+
+Value = |QuickLisp|
+Value = |quickLoad|
+Value = |quickFind|
+                                                                   Type: Void
+                                                                   Type: Void
+(3) -> quickLoad("embeddable-maxima")$Lisp
+To load "embeddable-maxima":
+  Load 1 ASDF system:
+    embeddable-maxima
+; Loading "embeddable-maxima"
+..
+
+   (3)  (embeddable-maxima)
+                                                            Type: SExpression
+(4) -> )lisp  #$[2*x + y - z = 8, -3*x - y + 2*z = -11, -2*x + y + 2*z = -3]$
+
+Value = ((MAXIMA::MLIST . #1=(MAXIMA::SIMP))
+         ((MAXIMA::MEQUAL . #1#)
+          (#2=(MAXIMA::MPLUS . #1#) (#3=(MAXIMA::MTIMES . #1#) 2 MAXIMA::$X)
+           MAXIMA::$Y (#3# -1 MAXIMA::$Z))
+          8)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -3 MAXIMA::$X) (#3# -1 MAXIMA::$Y) (#3# 2 MAXIMA::$Z)) -11)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -2 MAXIMA::$X) MAXIMA::$Y (#3# 2 MAXIMA::$Z)) -3))
+(4) -> )lisp *package*
+
+Value = #<PACKAGE "BOOT">
+(4) -> )lisp (setq *tmp* #$[2*x + y - z = 8, -3*x - y + 2*z = -11, -2*x + y + 2*z = -3]$)
+
+Value = ((MAXIMA::MLIST . #1=(MAXIMA::SIMP))
+         ((MAXIMA::MEQUAL . #1#)
+          (#2=(MAXIMA::MPLUS . #1#) (#3=(MAXIMA::MTIMES . #1#) 2 MAXIMA::$X)
+           MAXIMA::$Y (#3# -1 MAXIMA::$Z))
+          8)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -3 MAXIMA::$X) (#3# -1 MAXIMA::$Y) (#3# 2 MAXIMA::$Z)) -11)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -2 MAXIMA::$X) MAXIMA::$Y (#3# 2 MAXIMA::$Z)) -3))
+(4) -> )lisp *tmp*
+
+Value = ((MAXIMA::MLIST . #1=(MAXIMA::SIMP))
+         ((MAXIMA::MEQUAL . #1#)
+          (#2=(MAXIMA::MPLUS . #1#) (#3=(MAXIMA::MTIMES . #1#) 2 MAXIMA::$X)
+           MAXIMA::$Y (#3# -1 MAXIMA::$Z))
+          8)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -3 MAXIMA::$X) (#3# -1 MAXIMA::$Y) (#3# 2 MAXIMA::$Z)) -11)
+         ((MAXIMA::MEQUAL . #1#)
+          (#2# (#3# -2 MAXIMA::$X) MAXIMA::$Y (#3# 2 MAXIMA::$Z)) -3))
+(4) -> )lisp (displa *tmp*)
+
+   >> System error:
+   The function BOOT::DISPLA is undefined.
+
+(4) -> )lisp (maxima::displa *tmp*)
+[- z + y + 2 x = 8, 2 z - y - 3 x = - 11, 2 z + y - 2 x = - 3]
+Value = NIL
+(4) ->
+

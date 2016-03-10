@@ -26,6 +26,602 @@ OpenJDK 64-Bit Server VM
 
 Clozure CL
   Version 1.8-r15286M  (WindowsX8664) virtualbox x86_64 (all tests passed)
+  
+  
+kfp@helix:~$ fricas -nosman
+Checking for foreign routines
+AXIOM="/usr/local/lib/fricas/target/x86_64-unknown-linux"
+spad-lib="/usr/local/lib/fricas/target/x86_64-unknown-linux/lib/libspad.so"
+foreign routines found
+openServer result -2
+                       FriCAS Computer Algebra System
+                         Version: FriCAS 2016-01-24
+                   Timestamp: Sam Feb 20 18:53:34 CET 2016
+-----------------------------------------------------------------------------
+   Issue )copyright to view copyright notices.
+   Issue )summary for a summary of useful system commands.
+   Issue )quit to leave FriCAS and return to shell.
+-----------------------------------------------------------------------------
+
+Value = |QuickLisp|
+Value = |quickLoad|
+Value = |quickFind|
+                                                                   Type: Void
+                                                                   Type: Void
+(3) -> quickLoad("embeddable-maxima")$Lisp
+To load "embeddable-maxima":
+  Load 1 ASDF system:
+    embeddable-maxima
+; Loading "embeddable-maxima"
+To load "f2cl":
+  Install 1 Quicklisp release:
+    f2cl
+; Fetching #<URL "http://beta.quicklisp.org/archive/f2cl/2015-05-05/f2cl-20150505-git.tgz">
+; 2085.94KB
+==================================================
+2,135,999 bytes in 2.14 seconds (975.19KB/sec)
+; Loading "f2cl"
+[package f2cl-lib]................................
+[package fortran-to-lisp].........................
+............................
+; Loading "embeddable-maxima"
+To load "getopt":
+  Install 1 Quicklisp release:
+    getopt
+; Fetching #<URL "http://beta.quicklisp.org/archive/getopt/2012-09-09/getopt-20120909-git.tgz">
+; 4.99KB
+==================================================
+5,109 bytes in 0.00 seconds (0.00KB/sec)
+; Loading "getopt"
+[package getopt].
+; Loading "embeddable-maxima"
+[package cl-fad]..................................
+[package path]....................................
+[package em-slatec]...............................
+[package em-quadpack]
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgtf.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgtf.lisp"
+
+DQWGTF .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqcheb.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqcheb.lisp"
+
+DQCHEB ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15w.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15w.lisp"
+
+DQK15W ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgts.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgts.lisp"
+
+DQWGTS
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgtc.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqwgtc.lisp"
+
+DQWGTC
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dgtsl.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dgtsl.lisp"
+
+DGTSL ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerabt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerabt.lisp"
+
+XERABT
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerrwv.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerrwv.lisp"
+
+XERRWV ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/j4save.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/j4save.lisp"
+
+J4SAVE
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerprt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerprt.lisp"
+
+XERPRT
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xersav.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xersav.lisp"
+
+XERSAV ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerctl.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerctl.lisp"
+
+XERCTL
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xgetua.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xgetua.lisp"
+
+XGETUA .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerror.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/xerror.lisp"
+
+XERROR
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/fdump.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/fdump.lisp"
+
+FDUMP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15.lisp"
+
+DQK15 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk31.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk31.lisp"
+
+DQK31 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk41.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk41.lisp"
+
+DQK41 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk51.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk51.lisp"
+
+DQK51 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk61.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk61.lisp"
+
+DQK61 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk21.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk21.lisp"
+
+DQK21 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15i.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqk15i.lisp"
+
+DQK15I .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqelg.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqelg.lisp"
+
+DQELG ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqpsrt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqpsrt.lisp"
+
+DQPSRT .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25s.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25s.lisp"
+
+DQC25S .....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqmomo.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqmomo.lisp"
+
+DQMOMO ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25c.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25c.lisp"
+
+DQC25C .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25f.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqc25f.lisp"
+
+DQC25F ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqage.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqage.lisp"
+
+DQAGE ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagie.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagie.lisp"
+
+DQAGIE ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagpe.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagpe.lisp"
+
+DQAGPE .....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagp.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagp.lisp"
+
+DQAGP .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagse.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagse.lisp"
+
+DQAGSE ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawoe.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawoe.lisp"
+
+DQAWOE ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawfe.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawfe.lisp"
+
+DQAWFE ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawse.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawse.lisp"
+
+DQAWSE ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawce.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawce.lisp"
+
+DQAWCE ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqng.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqng.lisp"
+
+DQNG ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqag.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqag.lisp"
+
+DQAG .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqags.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqags.lisp"
+
+DQAGS .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagi.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqagi.lisp"
+
+DQAGI
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawf.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawf.lisp"
+
+DQAWF ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawo.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawo.lisp"
+
+DQAWO .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqaws.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqaws.lisp"
+
+DQAWS .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawc.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/quadpack/fortran/dqawc.lisp"
+
+DQAWC
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/fdump.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/fdump.lisp"
+
+FDUMP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/j4save.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/j4save.lisp"
+
+J4SAVE .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xgetua.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xgetua.lisp"
+
+XGETUA
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xercnt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xercnt.lisp"
+
+XERCNT
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xerhlt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xerhlt.lisp"
+
+XERHLT
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xerprn.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xerprn.lisp"
+
+XERPRN ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xersve.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xersve.lisp"
+
+XERSVE ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xermsg.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/xermsg.lisp"
+
+XERMSG ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/initds.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/initds.lisp"
+
+INITDS
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dcsevl.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dcsevl.lisp"
+
+DCSEVL .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9lgmc.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9lgmc.lisp"
+
+D9LGMC
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamlm.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamlm.lisp"
+
+DGAMLM .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamma.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamma.lisp"
+
+DGAMMA .
+.
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamln.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dgamln.lisp"
+
+DGAMLN .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dlngam.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dlngam.lisp"
+
+DLNGAM .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9b0mp.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9b0mp.lisp"
+
+D9B0MP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9b1mp.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9b1mp.lisp"
+
+D9B1MP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj0.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj0.lisp"
+
+DBESJ0 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj1.lisp"
+
+DBESJ1
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/djairy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/djairy.lisp"
+
+DJAIRY ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dasyjy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dasyjy.lisp"
+
+DASYJY ....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesj.lisp"
+
+DBESJ ....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsynu.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsynu.lisp"
+
+DBSYNU ....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dyairy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dyairy.lisp"
+
+DYAIRY ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zabs.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zabs.lisp"
+
+ZABS
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zdiv.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zdiv.lisp"
+
+ZDIV
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zexp.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zexp.lisp"
+
+ZEXP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zmlt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zmlt.lisp"
+
+ZMLT
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zsqrt.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zsqrt.lisp"
+
+ZSQRT .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zasyi.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zasyi.lisp"
+
+ZASYI ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zlog.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zlog.lisp"
+
+ZLOG .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuchk.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuchk.lisp"
+
+ZUCHK
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zkscl.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zkscl.lisp"
+
+ZKSCL ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zshch.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zshch.lisp"
+
+ZSHCH
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbknu.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbknu.lisp"
+
+ZBKNU ......
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zmlri.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zmlri.lisp"
+
+ZMLRI ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zs1s2.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zs1s2.lisp"
+
+ZS1S2
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zseri.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zseri.lisp"
+
+ZSERI ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zacai.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zacai.lisp"
+
+ZACAI .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zairy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zairy.lisp"
+
+ZAIRY .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunik.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunik.lisp"
+
+ZUNIK ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunhj.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunhj.lisp"
+
+ZUNHJ .....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuoik.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuoik.lisp"
+
+ZUOIK ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuni1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuni1.lisp"
+
+ZUNI1 ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuni2.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zuni2.lisp"
+
+ZUNI2 ...
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbuni.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbuni.lisp"
+
+ZBUNI .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zrati.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zrati.lisp"
+
+ZRATI ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zwrsk.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zwrsk.lisp"
+
+ZWRSK .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbinu.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbinu.lisp"
+
+ZBINU .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesj.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesj.lisp"
+
+ZBESJ .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy0.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy0.lisp"
+
+DBESY0 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy1.lisp"
+
+DBESY1 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesy.lisp"
+
+DBESY .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zacon.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zacon.lisp"
+
+ZACON ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunk1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunk1.lisp"
+
+ZUNK1 .......
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunk2.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zunk2.lisp"
+
+ZUNK2 .......
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbunk.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbunk.lisp"
+
+ZBUNK .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesh.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesh.lisp"
+
+ZBESH ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesy.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesy.lisp"
+
+ZBESY .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsi0e.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsi0e.lisp"
+
+DBSI0E .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsi1e.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsi1e.lisp"
+
+DBSI1E
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi0.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi0.lisp"
+
+DBESI0 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi1.lisp"
+
+DBESI1
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dasyik.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dasyik.lisp"
+
+DASYIK .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesi.lisp"
+
+DBESI .....
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesi.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesi.lisp"
+
+ZBESI .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsk0e.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsk0e.lisp"
+
+DBSK0E .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk0.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk0.lisp"
+
+DBESK0
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsk1e.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsk1e.lisp"
+
+DBSK1E .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk1.lisp"
+
+DBESK1 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsknu.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbsknu.lisp"
+
+DBSKNU ...
+.
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbesk.lisp"
+
+DBESK ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesk.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbesk.lisp"
+
+ZBESK .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9aimp.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9aimp.lisp"
+
+D9AIMP
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/daie.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/daie.lisp"
+
+DAIE .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dai.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dai.lisp"
+
+DAI
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbie.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbie.lisp"
+
+DBIE .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbi.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dbi.lisp"
+
+DBI
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbiry.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/zbiry.lisp"
+
+ZBIRY ..
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/derfc.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/derfc.lisp"
+
+DERFC .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/derf.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/derf.lisp"
+
+DERF .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/de1.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/de1.lisp"
+
+DE1 .
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dei.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dei.lisp"
+
+DEI
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9upak.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/d9upak.lisp"
+
+D9UPAK
+;; #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dspenc.f" -> #P"/home/kfp/quicklisp/local-projects/embeddable-maxima/src/numerical/slatec/fortran/dspenc.lisp"
+
+DSPENC .......................................
+[package maxima-nregex]...........................
+[package cl-info].................................
+[package command-line]............................
+[package maxima]..................................
+[package mt19937].................................
+[package bigfloat-impl]...........................
+[package bigfloat]................................
+[package intl]....................................
+[package maxima-nregex]...........................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+..................................................
+...............................
+
+   (3)  (embeddable-maxima)
+                                                            Type: SExpression
+(4) -> )lisp (cl-user::run)
+
+Maxima 5.26.0 http://maxima.sourceforge.net
+using Lisp SBCL 1.2.16
+Distributed under the GNU Public License. See the file COPYING.
+Dedicated to the memory of William Schelter.
+The function bug_report() provides bug reporting information.
+(%i1) run_testsuite();
+Running tests in rtestnset: 553/553 tests passed
+Running tests in rtest1: 111/111 tests passed
+Running tests in rtest1a: 24/24 tests passed
+Running tests in rtest2: 67/67 tests passed
+Running tests in rtest4: 89/89 tests passed
+Running tests in rtest5: 75/75 tests passed
+Running tests in rtest6: 4/4 tests passed
+Running tests in rtest6a: 52/52 tests passed
+Running tests in rtest6b: 16/16 tests passed
+Running tests in rtest7: 44/44 tests passed
+Running tests in rtest9: 85/85 tests passed (not counting 1 expected errors)
+Running tests in rtest9a: 22/22 tests passed
+Running tests in rtest10: 46/46 tests passed (not counting 2 expected errors)
+Running tests in rtest11: 150/150 tests passed
+Running tests in rtest13: 23/23 tests passed
+Running tests in rtest13s: 17/17 tests passed
+Running tests in rtest14: WARNING: redefining MAXIMA::SIMP-UNIT-STEP in DEFUN
+WARNING: redefining MAXIMA::SIMP-POCHHAMMER in DEFUN
+WARNING: redefining MAXIMA::SIMP-HYPERGEOMETRIC in DEFUN
+WARNING: redefining MAXIMA::FLOAT-OR-RATIONAL-P in DEFUN
+366/366 tests passed
+Running tests in rtest15: WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+WARNING: redefining MAXIMA::$F in DEFUN
+253/253 tests passed
+Running tests in rtest16: 606/606 tests passed
+Running tests in rtestode: 90/90 tests passed
+Running tests in rtestode_zp: 30/30 tests passed
+Running tests in rtest3: 135/135 tests passed
+Running tests in rtest8: 162/162 tests passed
+Running tests in rtest12: 78/78 tests passed (not counting 2 expected errors)
+Running tests in rexamples: 136/136 tests passed
+Running tests in rtesthyp: 422/422 tests passed (not counting 8 expected errors)
+Running tests in rtest_hypgeo: 291/291 tests passed (not counting 1 expected errors)
+Running tests in rtestmt19937: 15/15 tests passed
+Running tests in rtest_allnummod: 524/524 tests passed
+Running tests in rtestconjugate: 134/134 tests passed
+Running tests in rtestsum: 303/303 tests passed (not counting 4 expected errors)
+Running tests in rtest_trig: 137/137 tests passed
+Running tests in rtest_zeta: 21/21 tests passed
+Running tests in rtest_diff_invtrig: 22/22 tests passed
+Running tests in rtest_scalarp: 20/20 tests passed
+Running tests in rtest_everysome: 84/84 tests passed
+Running tests in rtestint: 236/236 tests passed
+Running tests in rtest_numth: 24/24 tests passed
+Running tests in rtestifactor: 25/25 tests passed
+Running tests in rtest_equal: 201/201 tests passed (not counting 2 expected errors)
+Running tests in rtest_abs: 88/88 tests passed
+Running tests in rtest_taylor: 146/146 tests passed (not counting 11 expected errors)
+Running tests in rtest_dot: 55/55 tests passed
+Running tests in rtest_mset: 59/59 tests passed
+Running tests in rtest_boolean: 116/116 tests passed
+Running tests in rtest_round: 99/99 tests passed
+Running tests in rtest_map: 99/99 tests passed (not counting 3 expected errors)
+Running tests in rtest_sign: 288/288 tests passed (not counting 8 expected errors)
+Running tests in rtest_algebraic: 45/45 tests passed
+Running tests in rtest_gamma: 705/705 tests passed (not counting 2 expected errors)
+Running tests in rtest_expintegral: 204/204 tests passed
+Running tests in rtest_signum: 44/44 tests passed
+Running tests in rtest_lambert_w: 35/35 tests passed
+Running tests in rtest_elliptic: 81/81 tests passed
+Running tests in rtest_integrate:
+********************** Problem 191 ***************
+Input:
+            a acsch(z)
+integrate(%e          , z)
+
+
+Result:
+`quotient' by `zero'
+error-catch
+
+This differed from the expected result:
+/
+[   a acsch(z)
+I %e           dz
+]
+/
+
+
+811/812 tests passed
+
+The following 1 problem failed: (191)
+Running tests in rtest_integrate_special: 53/53 tests passed
+Running tests in rtest_ask: 6/6 tests passed
+Running tests in rtest_sqrt: 313/313 tests passed (not counting 1 expected errors)
+Running tests in rtest_carg: 55/55 tests passed (not counting 2 expected errors)
+Running tests in rtest_log: 120/120 tests passed (not counting 1 expected errors)
+Running tests in rtest_power: 72/72 tests passed (not counting 6 expected errors)
+
+Error summary:
+Error found in /home/kfp/quicklisp/local-projects/embeddable-maxima/tests/rtest_integrate.mac, problem:
+(191)
+1 test failed out of 9,188 total tests.
+Evaluation took:
+  488.836 seconds of real time
+  482.706105 seconds of total run time (480.044360 user, 2.661745 system)
+  [ Run times consist of 15.168 seconds GC time, and 467.539 seconds non-GC time. ]
+  98.75% CPU
+  19,522,249 forms interpreted
+  838 lambdas converted
+  634,297,040,240 processor cycles
+  11 page faults
+  25,951,185,200 bytes consed
+
+(%o0)                                done
+(%i1) quit();
+kfp@helix:~$
+  
   Version 1.8-r15286M  (WindowsX8632) virtualbox x86_64 (almost all tests passed, but three failed)
 
 Documentation
